@@ -14,6 +14,9 @@ Sometimes you need programmatic way to determine whether the mouse cursor is hov
 
 It's a rudimentary implementation since it only works on rectangular DOM elements.
 
+## Demo
+
+https://wle8300.github.io/is-inside-dom-element
 
 ## Install
 
