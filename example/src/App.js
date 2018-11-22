@@ -19,10 +19,18 @@ export default class App extends Component {
         flexDirection: 'column',
         width: '100vw',
         height: '100vh',
+        background: 'black',
       }}>
-        <div style={{marginBottom: '1rem',}}>Is the mouse inside the DOM element??</div>
-        <div ref="x" style={{marginBottom: '1rem', width: '25vw', height: '25vw', background: 'black',}}/>
-        <div><strong>{this.state.isInside ? 'YES' : 'NO'}</strong></div>
+        <div ref="x" style={{position: 'relative', marginBottom: '1rem', width: '25vw', height: '25vw', background: '#007bff',}}>
+          <div style={{
+            position: 'absolute',
+            bottom: 3,
+            left: 9,
+            color: '#c1c1c1',
+            fontSize: 39,
+            fontWeight: 'bold',
+          }}>{this.state.isInside ? 'YES' : 'NO'}</div>
+        </div>
       </div>
     )
   }

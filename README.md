@@ -8,21 +8,28 @@
 ![screenshot](screenshot.gif)
 
 
+
 ## Description
 
 Sometimes you need programmatic way to determine whether the mouse cursor is hovering above a DOM element. Instead of using <code>onmouseover</code> or <code>onmouseleave</code> this lib uses geometry to determine this.
 
 It's a rudimentary implementation since it only works on rectangular DOM elements.
 
+
+
 ## Demo
 
 https://wle8300.github.io/is-inside-dom-element
+
+
 
 ## Install
 
 ```bash
 npm install --save is-inside-dom-element
 ```
+
+
 
 ## Usage
 
@@ -38,6 +45,8 @@ document.addEventListener('mousemove', (event) => {
   console.log(isInside(event.x, event.y, element))
 })
 ```
+
+
 
 ## License
 
